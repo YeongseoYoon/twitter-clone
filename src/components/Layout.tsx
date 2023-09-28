@@ -1,15 +1,7 @@
-import { ReactNode } from "react";
+import { Outlet } from "react-router-dom";
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-const Layout = ({ children }: LayoutProps) => {
-  return (
-    <div className="flex justify-center min-h-screen m-auto h-min">
-      <div className="w-4/5">{children}</div>
-    </div>
-  );
+const Layout = () => {
+  return <Outlet />;
 };
 
 export default Layout;
