@@ -1,7 +1,11 @@
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
-  return <Outlet />;
+  return (
+    <div className="flex justify-center h-screen">
+      <Outlet />
+    </div>
+  );
 };
 
 export default Layout;
